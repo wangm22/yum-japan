@@ -74,7 +74,8 @@ h1, h2, h3, h4, h5, h6 {
 # Top Bar
 --------------------------------------------------------------*/
 #topbar {
-  background: #fff;
+  background: #fff; 
+  /* background:rgba(127, 137, 161, 0.25); */
   border-bottom: 1px solid #eee;
   font-size: 14px;
   padding: 0;
@@ -123,6 +124,7 @@ h1, h2, h3, h4, h5, h6 {
   height: 80px;
   transition: all 0.5s;
   z-index: 997;
+  /* background: #fff; */
   background: #fff;
   box-shadow: 0px 6px 9px 0px rgba(0, 0, 0, 0.06);
 }
@@ -1259,4 +1261,122 @@ section {
 
 #footer .credits a {
   color: #0c2e8a;
+}
+
+/**/
+
+#menu h3 {
+  display:inline-block;
+  font-size:32px;
+  line-height:36px;
+  position:relative;
+  margin-top:28px;
+  margin-bottom:15px;
+}
+#menu h3:before{
+  left:-40px;
+  height:0;
+  height:1px;
+}
+#menu h3:before, h3:after {
+  content:"";
+  position:absolute;
+  bottom:18px;
+  height:1px;
+  width:40px;
+  margin:0 -15px;
+  background-color:#533834;
+}
+#menu h3:after{
+  right:-40px;
+}
+#menu h5 {
+  font-size:16px;
+  line-height:22px;
+  margin:0 0 15px;
+  font-weight:400;
+}
+
+.item {
+  position:relative;
+  overflow:hidden;
+  margin-bottom:20px;
+}
+.item h4, .item p {
+  display:block;
+  clear:both;
+  color:#533834;
+}
+.item p {
+  clear:both;
+  color:#938372;
+  margin-left:5px;
+}
+.item span:first-of-type {
+  background-image:linear-gradient(to right,rgba(56,47,47,.5) 33%,rgba(0,0,0,0) 0%);
+  background-position:bottom;
+  background-size:3px 1px;
+  background-repeat:repeat-x;
+  height:1px;
+  width:100%;
+  position:absolute;
+  top:22px;
+}
+/* Dots in IE */
+@media screen and (-ms-high-contrast:active), (-ms-high-contrast:none) {
+  .dots {
+    background:transparent url('/img/dot.gif') repeat-x bottom left;
+  }
+}
+.badge {
+  display:inline-block;
+  padding:0 10px;
+  background:#d2c82a;
+  font-size:12px;
+  font-weight:300;
+  line-height:26px;
+  color:#fff;
+  text-align:center;
+  vertical-align:middle;
+  text-transform:uppercase;
+  border:1px solid rgba(0,0,0,.05);
+  letter-spacing:1px;
+  border-radius:3px;
+  margin:-2px 5px 0 0;
+}
+.note {
+  padding:0 5px 0 7px;
+  min-width:23px;
+  background:rgba(0,0,0,0);
+  border:1px solid #382f2f;
+  color:#382f2f;
+  box-sizing:border-box;
+  border-radius:12px;
+  line-height:21px;
+}
+.veggie {
+  color:#82b440;
+  border-color:#82b440;
+}
+.spicy {
+  color:#ec4e00;
+  border-color:#ec4e00;
+}
+.item span:nth-of-type(2n) {
+  position:absolute;
+  font-size:22px;
+  font-weight:400;
+  right:0;
+  padding-left:8px;
+  background-color:#fff;
+  z-index:0;
+}
+.item h4 {
+  display:inline-block;
+  padding-right:8px;
+  font-size:1.25rem;
+  max-width:80%;
+  text-transform:capitalize;
+  margin-bottom:4px;
+  position:relative;
 }

@@ -608,6 +608,15 @@ section {
   font-style: italic;
 }
 
+/* new */
+#about .content h4 {
+  color: #555;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 26px;
+  font-style: italic;
+}
+
 #about .content p {
   line-height: 26px;
 }
@@ -680,6 +689,17 @@ section {
 }
 
 #services .box h4 a {
+  color: #444;
+}
+
+#services .box h5 {
+  margin-left: 100px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-size: 12px;
+}
+
+#services .box h5 a {
   color: #444;
 }
 
@@ -984,7 +1004,8 @@ section {
 /* Call To Action Section
 --------------------------------*/
 #call-to-action {
-  background: #081e5b;
+  /* background: #081e5b; */
+  background: rgba(218, 10, 10, 0.808);
   background-size: cover;
   padding: 40px 0;
 }
@@ -1011,9 +1032,9 @@ section {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   font-size: 16px;
-  letter-spacing: 1px;
+  /* letter-spacing: 1px; */
   display: inline-block;
-  padding: 8px 26px;
+  /* padding: 8px 26px; */
   border-radius: 3px;
   transition: 0.5s;
   margin: 10px;
@@ -1022,61 +1043,10 @@ section {
 }
 
 #call-to-action .cta-btn:hover {
-  background: #50d8af;
-  border: 3px solid #50d8af;
-}
-
-/* Our Team Section
---------------------------------*/
-#team {
-  background: #fff;
-  padding: 30px 0 0 0;
-}
-
-#team .member {
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-#team .member .pic {
-  overflow: hidden;
-  text-align: center;
-}
-
-#team .member .pic img {
-  max-width: 100%;
-}
-
-#team .member .details {
-  background: #50d8af;
-  color: #fff;
-  padding: 15px;
-  border-radius: 0 0 3px 3px;
-}
-
-#team .member h4 {
-  font-weight: 700;
-  margin-bottom: 2px;
-  font-size: 18px;
-}
-
-#team .member span {
-  font-style: italic;
-  display: block;
-  font-size: 13px;
-}
-
-#team .member .social {
-  margin-top: 5px;
-}
-
-#team .member .social a {
-  color: #fff;
-}
-
-#team .member .social i {
-  font-size: 16px;
-  margin: 0 2px;
+  /* background: #50d8af;
+  border: 3px solid #50d8af; */
+  background: #ebcc34;
+  border: 3px solid #ebcc34;
 }
 
 /* Contact Section
@@ -1146,81 +1116,6 @@ section {
   }
 }
 
-#contact .php-email-form .validate {
-  display: none;
-  color: red;
-  margin: 0 0 15px 0;
-  font-weight: 400;
-  font-size: 13px;
-}
-
-#contact .php-email-form .error-message {
-  display: none;
-  color: #fff;
-  background: #ed3c0d;
-  text-align: left;
-  padding: 15px;
-  font-weight: 600;
-}
-
-#contact .php-email-form .error-message br + br {
-  margin-top: 25px;
-}
-
-#contact .php-email-form .sent-message {
-  display: none;
-  color: #fff;
-  background: #18d26e;
-  text-align: center;
-  padding: 15px;
-  font-weight: 600;
-}
-
-#contact .php-email-form .loading {
-  display: none;
-  background: #fff;
-  text-align: center;
-  padding: 15px;
-}
-
-#contact .php-email-form .loading:before {
-  content: "";
-  display: inline-block;
-  border-radius: 50%;
-  width: 24px;
-  height: 24px;
-  margin: 0 10px -6px 0;
-  border: 3px solid #18d26e;
-  border-top-color: #eee;
-  -webkit-animation: animate-loading 1s linear infinite;
-  animation: animate-loading 1s linear infinite;
-}
-
-#contact .php-email-form input, #contact .php-email-form textarea {
-  padding: 10px 14px;
-  border-radius: 0;
-  box-shadow: none;
-  font-size: 15px;
-}
-
-#contact .php-email-form input::focus, #contact .php-email-form textarea::focus {
-  background-color: #50d8af;
-}
-
-#contact .php-email-form button[type="submit"] {
-  background: #50d8af;
-  border: 0;
-  border-radius: 3px;
-  padding: 10px 30px;
-  color: #fff;
-  transition: 0.4s;
-  cursor: pointer;
-}
-
-#contact .php-email-form button[type="submit"]:hover {
-  background: #2dc899;
-}
-
 @-webkit-keyframes animate-loading {
   0% {
     transform: rotate(0deg);
@@ -1263,9 +1158,18 @@ section {
   color: #0c2e8a;
 }
 
-/**/
+/* Menu Section
+--------------------------------*/
 
-#menu h3 {
+#menu {
+  padding-top: 0px;
+}
+
+#menu .section-header h2 {
+  margin-bottom: 0px;
+}
+
+.text-center h3 {
   display:inline-block;
   font-size:32px;
   line-height:36px;
@@ -1273,12 +1177,14 @@ section {
   margin-top:28px;
   margin-bottom:15px;
 }
-#menu h3:before{
+.text-center h3:before{
   left:-40px;
   height:0;
   height:1px;
 }
-#menu h3:before, h3:after {
+
+/* line */
+.text-center h3:before, h3:after {
   content:"";
   position:absolute;
   bottom:18px;
@@ -1287,7 +1193,7 @@ section {
   margin:0 -15px;
   background-color:#533834;
 }
-#menu h3:after{
+.text-center h3:after{
   right:-40px;
 }
 #menu h5 {
@@ -1354,14 +1260,7 @@ section {
   border-radius:12px;
   line-height:21px;
 }
-.veggie {
-  color:#82b440;
-  border-color:#82b440;
-}
-.spicy {
-  color:#ec4e00;
-  border-color:#ec4e00;
-}
+
 .item span:nth-of-type(2n) {
   position:absolute;
   font-size:22px;

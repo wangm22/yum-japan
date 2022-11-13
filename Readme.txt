@@ -1,6 +1,3 @@
-Thanks for downloading this template!
+Pro bono passion project to help out a local family-run restaurant during the pandemic by siblings Cindy and Michael Wang 
 
-Template Name: Reveal
-Template URL: https://bootstrapmade.com/reveal-bootstrap-corporate-template/
-Author: BootstrapMade.com
-License: https://bootstrapmade.com/license/
+https://www.yumjapan-okemos.com/
